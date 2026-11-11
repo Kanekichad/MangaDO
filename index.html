@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бригада 9 Фокин С.С. Лапонин А.А.</title>
+    
+    <!-- Шрифт Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo_img">
+                <img src="../лого.png" alt="Логотип MangaDo">
+            </div>
+            <div class="logo_name">
+                <a href="#">MangaDo</a>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="nav-dropdown">
+                <a href="#">Каталог ▼</a>
+                <div class="dropdown-menu">
+                    <a href="#">Манга</a>
+                    <a href="#">Манхва</a>
+                    <a href="#">Маньхуа</a>
+                    <a href="#">Ранобэ</a>
+                </div>
+            </div>
+            <a href="#">Авторы</a>
+            <a href="#">Библиотеки</a>
+            <a href="#">О нас</a>
+        </div>
+
+        <div class="search">
+            <img src="../magnifier.png" alt="Поиск манги" class="icon_magnifier">
+            <input type="text" placeholder="Найти мангу...">
+        </div>
+
+        <div class="icons">
+            <img src="../bag_black.png" alt="Корзина для покупок" class="icon">
+            <img src="../user.png" alt="Пользователь" class="icon">
+        </div>                                                                       
+    </div>
+
+    <section class="banner">
+        <div class="banner-walp">
+            <div class="slide">
+                <div class="slide-content">
+                    <span class="badge badge_new">NEW</span>
+                    <h2>Главные новинки недели</h2>
+                    <p>Успей купить пока все не разобрали</p>
+                    <div class="stats">
+                        <span class="stat">⭐ 4.9 Рейтинг</span>
+                        <span class="stat">🔥 1.2K купили сегодня</span>
+                    </div>
+                    <a href="#" class="btn_banner">К новинкам</a>
+                </div>
+                <div class="slide_img">
+                    <img src="../сатору.png" alt="Сатору Годжо">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <span class="badge badge_hit">ХИТ</span>
+                    <h2>Атака титанов</h2>
+                    <p>Человечество за стеной. Тайна титанов будет раскрыта.</p>
+                    <div class="tags">
+                        <span class="tag">Экшен</span>
+                        <span class="tag">Драма</span>
+                        <span class="tag">Сёнэн</span>
+                        <span class="tag age_tag">18+</span>
+                    </div>
+                    <a href="#" class="btn_banner">Купить сейчас</a>
+                </div>
+                <div class="slide_img">
+                    <img src="../eren.png" alt="Эрен Йегер">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <span class="badge badge_set">-20% СЕТ</span>
+                    <h2>Берсерк: Золотое издание</h2>
+                    <div class="preview">
+                        <img src="../Tom_1.png" alt="Том 1" class="cover">
+                        <img src="../Tom_2.jpg" alt="Том 2" class="cover">
+                        <img src="../Tom_3.jpg" alt="Том 3" class="cover">
+                        <span class="more">+7 томов</span>
+                    </div>
+                    <a href="#" class="btn_banner">Купить набор</a>
+                </div>
+                <div class="slide_img">
+                    <img src="../gats.png" alt="Гатс черный мечник">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="page-layout">
+        <!-- Фильтры -->
+        <aside class="window_filter">
+            <h2>Фильтры</h2>
+            <div class="window_type filter_css">
+                <h4>Тип</h4>
+                <label><input type="checkbox">Манга</label>
+                <label><input type="checkbox">Манхва</label>
+                <label><input type="checkbox">Маньхуа</label>
+            </div>
+            
+            <div class="window_janr filter_css">
+                <h4>Жанр</h4>
+                <input type="checkbox" id="filter_janr" class="check_janr">
+                <label><input type="checkbox">Романтика</label>
+                <label><input type="checkbox">Драма</label>
+                <label><input type="checkbox">Исекай</label>
+                <label><input type="checkbox">Сёнэн</label>
+
+                <label class="hidden_filter"><input type="checkbox">Комедия</label>
+                <label class="hidden_filter"><input type="checkbox">Меха</label>
+                <label class="hidden_filter"><input type="checkbox">Повседневность</label>
+                <label class="hidden_filter"><input type="checkbox">Школа</label>
+                <label class="hidden_filter"><input type="checkbox">Боевик</label>
+                <label class="hidden_filter"><input type="checkbox">Ужасы</label>
+                <label class="hidden_filter"><input type="checkbox">Психология</label>
+                <label class="hidden_filter"><input type="checkbox">Научная фантастика</label>
+                <label class="hidden_filter"><input type="checkbox">Сэйнэн</label>
+                <label class="hidden_filter"><input type="checkbox">Дзёсэй</label>
+                <label class="hidden_filter"><input type="checkbox">Сёдзё</label>
+                <label class="hidden_filter"><input type="checkbox">Этти</label>
+                <label class="hidden_filter"><input type="checkbox">Кодомо</label>
+                <label class="hidden_filter"><input type="checkbox">Детектив</label>
+                <label class="hidden_filter"><input type="checkbox">Постапокалипсис</label>
+                <label class="hidden_filter"><input type="checkbox">Исторический</label>
+                <label class="hidden_filter"><input type="checkbox">Спорт</label>
+
+                <label for="filter_janr" class="show-more-btn">Показать все</label>
+            </div>
+
+            <div class="window_izd filter_css">
+                <h4>Издательство</h4>
+                <input type="checkbox" id="filter_izd" class="check_izd">
+                <label><input type="checkbox">Истари Комикс</label>
+                <label><input type="checkbox">Азбука</label>
+                <label><input type="checkbox">XL Media</label>
+
+                <label class="hidden_filter"><input type="checkbox">Фабрика комиксов</label>
+                <label class="hidden_filter"><input type="checkbox">Alt Graph</label>
+                <label class="hidden_filter"><input type="checkbox">Comfanz</label>
+                <label class="hidden_filter"><input type="checkbox">Другие</label>
+
+                <label for="filter_izd" class="show-more-btn">Показать все</label>
+            </div>
+
+            <div class="window_status filter_css">
+                <h4>Статус</h4>
+                <label><input type="checkbox">Онгоинг</label>
+                <label><input type="checkbox">Завершён</label>
+                <label><input type="checkbox">Приостановлен</label>
+            </div>
+
+            <div class="window_age filter_css">
+                <h4>Возраст</h4>
+                <label><input type="checkbox">0+</label>
+                <label><input type="checkbox">6+</label>
+                <label><input type="checkbox">12+</label>
+                <label><input type="checkbox">16+</label>
+                <label><input type="checkbox">18+</label>
+            </div>
+
+            <div class="window_price filter_css">
+                <h4>Цена</h4>
+                <label><input type="checkbox"> До 1000 ₽</label>
+                <label><input type="checkbox"> 1000 – 2000 ₽</label>
+                <label><input type="checkbox"> От 2000 ₽</label>
+            </div>
+
+            <button type="button" class="reset-btn">Сбросить всё</button>
+        </aside>
+
+        <section class="catalog-grid">
+            <h2>Популярное сейчас</h2>
+            <div class="window_grid">
+                <div class="window_product">
+                    <div class="img_product">
+                        <img src="../теневой.jpg" alt="Теневой раб. Том 1">
+                    </div>
+                    <h4>Теневой раб. Том 1</h4>
+                    <p class="publisher">Издательство: Азбука</p>
+                    <div class="price_bag">
+                        <span>999 руб</span>
+                        <a href="#" class="btn_add_bag">+</a>
+                    </div>
+                </div>
+
+                <div class="window_product">
+                    <div class="img_product">
+                        <img src="../Берсерк.jpg" alt="Берсерк. Том 17">
+                    </div>
+                    <h4>Берсерк. Том 17</h4>
+                    <p class="publisher">Издательство: Азбука</p>
+                    <div class="price_bag">
+                        <span>1049 руб</span>
+                        <a href="#" class="btn_add_bag">+</a>
+                    </div>
+                </div>
+
+                <div class="window_product">
+                    <div class="img_product">
+                        <img src="../магичка.jpg" alt="Магическая битва. Том 5">
+                    </div>
+                    <h4>Магическая битва. Том 5</h4>
+                    <p class="publisher">Издательство: XL Media</p>
+                    <div class="price_bag">
+                        <span>759 руб</span>
+                        <a href="#" class="btn_add_bag">+</a>
+                    </div>
+                </div>
+
+                <div class="window_product">
+                    <div class="img_product">
+                        <img src="../тетрадка.jpg" alt="Тетрадь смерти. Том 13">
+                    </div>
+                    <h4>Тетрадь смерти. Том 13</h4>
+                    <p class="publisher">Издательство: Истари Комикс</p>
+                    <div class="price_bag">
+                        <span>849 руб</span>
+                        <a href="#" class="btn_add_bag">+</a>
+                    </div>
+                </div>
+
+                <div class="window_product">
+                    <div class="img_product">
+                        <img src="../распятие.jpg" alt="Распятие шести. Том 9">
+                    </div>
+                    <h4>Распятие шести. Том 9</h4>
+                    <p class="publisher">Издательство: Азбука</p>
+                    <div class="price_bag">
+                        <span>1149 руб</span>
+                        <a href="#" class="btn_add_bag">+</a>
+                    </div>
+                </div>
+
+                <div class="window_product">
+                    <div class="img_product">
+                        <img src="../тб4.jpg" alt="Теневой раб. Том 4">
+                    </div>
+                    <h4>Теневой раб. Том 4</h4>
+                    <p class="publisher">Издательство: Азбука</p>
+                    <div class="price_bag">
+                        <span>1099 руб</span>
+                        <a href="#" class="btn_add_bag">+</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-footer">
+                <button class="show-more-catalog">Показать ещё</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../лого.png" alt="MangaDo">
+                    <span class="footer-logo-text">MangaDo</span>
+                </div>
+                <p class="footer-copyright">© 2026 Магазин манги и манхвы</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат и гарантия</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Клуб MangaDo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><a href="mailto:support@mangado.ru">support@mangado.ru</a></li>
+                    <li class="social-links">
+                        <a href="#">Telegram</a>
+                        <span class="separator">|</span>
+                        <a href="#">VK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
